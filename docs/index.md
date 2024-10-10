@@ -52,12 +52,20 @@ Nocobase官方地址：https://www.nocobase.com/ 。
 
 ### 部署步骤
 
+
 1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=NocoBase%20%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
 2. 选择新建ECS实例并根据界面提示配置参数，配置完成后点击下一步：确认订单。
-  ![image.png](img.png)
+
+   <img src="img.png" alt="image" style="width: 800px; height: auto;" />
+   
 3. 点击立即创建，等待服务实例创建完成。
-  ![image.png](img_1.png)
+
+   <img src="img_1.png" alt="image" style="width: 800px; height: auto;" />
+   
 4. 服务实例创建成功后，进入服务实例详情页。在概览页可获取Nocobase登录信息。初始化账号：admin@nocobase.com，密码：admin123 其他默认配置可以查看nocobase docker-compose部署文档：https://docs.nocobase.com/welcome/getting-started/installation/docker-compose 。
-  ![image.png](img_2.png)
+
+   <img src="img_2.png" alt="image" style="width: 800px; height: auto;" />
+   
 5. 点击外网面板地址访问Nocobase服务。
-  ![image.png](img_3.png)
+
+   <img src="img_3.png" alt="image" style="width: 800px; height: auto;" />
