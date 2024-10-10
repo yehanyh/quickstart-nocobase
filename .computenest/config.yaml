@@ -1,5 +1,5 @@
 Service:
-  RegionId: cn-hangzhou
+  RegionId: ap-southeast-1
   DeployType: ros
   DeployMetadata:
     SupplierDeployMetadata:
@@ -16,8 +16,6 @@ Service:
           - cn-zhangjiakou
           - cn-huhehaote
           - cn-wulanchabu
-          - cn-qingdao-acdr-ut-1
-          - cn-zhengzhou-jva
           - cn-hangzhou
           - cn-shanghai
           - cn-shanghai-cloudspe
@@ -26,7 +24,6 @@ Service:
           - cn-shenzhen
           - cn-heyuan
           - cn-guangzhou
-          - cn-heyuan-acdr-1
           - cn-fuzhou
           - cn-wuhan-lr
           - cn-chengdu
