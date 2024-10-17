@@ -69,3 +69,4 @@ Nocobase官方地址：https://www.nocobase.com/ 。
 5. 点击外网面板地址访问Nocobase服务。
 
    <img src="img_3.png" alt="image" style="width: 800px; height: auto;" />
+   <img src="img_4.png" alt="image" style="width: 800px; height: auto;" />
