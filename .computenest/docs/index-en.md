@@ -10,7 +10,7 @@ Official NocoBase website: [https://www.nocobase.com/](https://www.nocobase.com/
 ## Service Architecture
 
 The deployment architecture of the service constructed by this service template is a single ECS deployment.  
-![Architecture](architecture_ecs_single.png)
+![Architecture](architecture_en.png)
 
 ## Billing Description
 
