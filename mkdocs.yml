@@ -2,3 +2,5 @@ site_name: Aliyun 计算巢 x quickstart-nocobase
 theme: 
   name: aliyuncomputenest
 docs_dir: .computenest/docs
+extra_css:
+  - 'extra.css'

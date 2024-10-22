@@ -58,21 +58,17 @@ table below:
 
 ### Deployment Steps
 
-1. Click [Deployment Link](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=NocoBase%20%E7%A4%BE%E5%8C%BA%E7%89%88)
-to enter the service instance deployment page.
+1. Click [Deployment Link](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=NocoBase%20%E7%A4%BE%E5%8C%BA%E7%89%88) to enter the service instance deployment page.
 
-2. Select "Create a New ECS Instance" and configure parameters as prompted. After configuration, click "Next: Confirm
-   Order."  
+2. Select "Create a New ECS Instance" and configure parameters as prompted. After configuration, click "Next: Confirm Order."  
    <img src="img_1_en.png" alt="image" style="width: 800px; height: auto;" />
 
 3. Click "Create Now" and wait for the service instance to complete creation.  
    <img src="img_2_en.png" alt="image" style="width: 800px; height: auto;" />
 
-4. Once the service instance is successfully created, go to the service instance details page. Login information for
-   NocoBase can be obtained on the overview page. Initial account: admin@nocobase.com, password: admin123. For other
-   default configurations, refer to the NocoBase Docker Compose deployment
-   documentation: [NocoBase Docs](https://docs.nocobase.com/welcome/getting-started/installation/docker-compose).  
+4. Once the service instance is successfully created, go to the service instance details page. Login information for NocoBase can be obtained on the overview page. Initial account: `admin@nocobase.com`, password: `admin123`. For other default configurations, refer to the [NocoBase Docker Compose deployment documentation](https://docs.nocobase.com/welcome/getting-started/installation/docker-compose).  
    <img src="img_3_en.png" alt="image" style="width: 800px; height: auto;" />
 
 5. Click the external network panel address to access the NocoBase service.  
    <img src="img_4.png" alt="image" style="width: 800px; height: auto;" />
+
