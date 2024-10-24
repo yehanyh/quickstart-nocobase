@@ -1,31 +1,32 @@
 version: "3"
+
 networks:
   nocobase:
     driver: bridge
 
 services:
   app:
-    image: nocobase/nocobase:latest
+    image: registry.cn-shanghai.aliyuncs.com/nocobase/nocobase:latest
     networks:
       - nocobase
     depends_on:
       - postgres
     environment:
-      # The application's secret key, used to generate user tokens, etc.
-      # If APP_KEY is changed, old tokens will also become invalid.
-      # It can be any random string, and make sure it is not exposed.
-      - APP_KEY=your-secret-key
-      # Database type, supports postgres, mysql, mariadb
+      # 应用的密钥，用于生成用户 token 等
+      # 如果 APP_KEY 修改了，旧的 token 也会随之失效
+      # 可以是任意随机字符串，并确保不对外泄露
+      - APP_KEY=${APP_KEY}
+      # 数据库类型，支持 postgres, mysql, mariadb, sqlite
       - DB_DIALECT=postgres
-      # Database host, can be replaced with the IP of an existing database server
+      # 数据库主机，可以替换为已有的数据库服务器 IP
       - DB_HOST=postgres
-      # Database name
+      # 数据库名
       - DB_DATABASE=nocobase
-      # Database user
+      # 数据库用户
       - DB_USER=nocobase
-      # Database password
+      # 数据库密码
       - DB_PASSWORD=nocobase
-      # Timezone
+      # 时区
       - TZ=Asia/Shanghai
     volumes:
       - ./storage:/app/nocobase/storage
@@ -33,9 +34,9 @@ services:
       - "13000:80"
     # init: true
 
-  # If using an existing database server, postgres service can be omitted
+  # 如果使用已有数据库服务，可以不启动 postgres
   postgres:
-    image: postgres:16
+    image: registry.cn-shanghai.aliyuncs.com/nocobase/postgres:16
     restart: always
     command: postgres -c wal_level=logical
     environment:
