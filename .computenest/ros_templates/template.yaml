@@ -194,6 +194,7 @@ Parameters:
     Type: String
     AssociationProperty: ALIYUN::ECS::Instance::Password
     Label: APP_KEY
+    NoEcho: True
 Resources:
   # 新建vpc
   EcsVpc:
