@@ -302,7 +302,7 @@ Resources:
             Type=oneshot
             RemainAfterExit=yes
             WorkingDirectory=/root/application/docker_compose
-            ExecStart=/usr/bin/docker compose -f docker-compose-postgresql.yaml up -d
+            ExecStart=/usr/bin/docker compose -f docker-compose-mysql.yaml up -d
             ExecStop=/usr/bin/docker compose down
             TimeoutStartSec=0
 
