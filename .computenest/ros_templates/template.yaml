@@ -190,10 +190,10 @@ Parameters:
           Fn::Equals:
             - ExistingVPC
             - ${VpcOption}
-  APP_KEY:
+  Password:
     Type: String
     AssociationProperty: ALIYUN::ECS::Instance::Password
-    Label: APP_KEY
+    Label: 密码
     NoEcho: True
 Resources:
   # 新建vpc
@@ -310,7 +310,7 @@ Resources:
             WantedBy=multi-user.target
             EOF
 
-            sed -i 's/APP_KEY=[^\n]*/APP_KEY=${APP_KEY}/' /root/application/docker_compose/.env
+            echo 'Password=${Password}' >> /root/application/docker_compose/.env
             systemctl start docker-compose-app
           - RegionId:
               Ref: ALIYUN::Region
@@ -352,7 +352,7 @@ Metadata:
         Label:
           default: 可用区配置
       - Parameters:
-          - APP_KEY
+          - Password
         Label:
           en: Software Configuration
           zh-cn: 软件配置
