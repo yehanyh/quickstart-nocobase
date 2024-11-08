@@ -289,7 +289,7 @@ Resources:
             host=$(echo $host | tr -d '"')
             docker login $host --username=$username --password=$password
 
-            wget '{{ computenest::file::aliyun-computenest_quickstart-nocobase-docker-compose }}' -O /root/application/docker_compose.tar
+            wget '{{ computenest::file::yehanyh_quickstart-nocobase-docker-compose }}' -O /root/application/docker_compose.tar
             tar -xvf /root/application/docker_compose.tar -C /root/application
 
             cat > /etc/systemd/system/docker-compose-app.service <<EOF
